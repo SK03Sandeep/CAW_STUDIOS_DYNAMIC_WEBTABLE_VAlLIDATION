@@ -1,5 +1,4 @@
 package CAWSTUDIOS;
-
 import com.google.gson.JsonArray;
 import java.util.*;
 import com.google.gson.JsonObject;
@@ -105,10 +104,14 @@ public static void main(String[]args) throws InterruptedException, FileNotFoundE
                         for (String display2:array) {
                                 System.out.print(display2+"--");
                         }
+                        System.out.println("----------------------------------------------------------------------------");
 // comparing data extracted from webtable with data in json file.
                         Assert.assertEquals(compare.get(0),array.get(0));
+                        System.out.println("assertion 1 passed");
                         Assert.assertEquals(compare.get(1),array.get(1));
+                        System.out.println("assertion 2 passed");
                         Assert.assertEquals(compare.get(2),array.get(2));
+                        System.out.println("assertion 3 passed");
                         array.clear();
                         compare.clear();
 
